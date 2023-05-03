@@ -1,0 +1,5 @@
+package com.sumit.Repository;
+
+public interface ContactMasterRepo {
+
+}

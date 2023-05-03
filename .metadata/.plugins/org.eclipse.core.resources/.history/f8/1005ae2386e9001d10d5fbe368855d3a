@@ -1,0 +1,17 @@
+package com.sumit.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "contact_mstr")
+public class ContactMasterEntity {
+	
+	private Integer contactId;
+
+	private String contactName;
+	
+	private Long contactNumber;
+}

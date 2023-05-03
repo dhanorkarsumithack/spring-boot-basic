@@ -1,0 +1,27 @@
+package com.sumit;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sumit.Repository.ContactMasterRepo;
+import com.sumit.entity.ContactMasterEntity;
+
+@SpringBootApplication
+public class SpringDataJpaAshokitApplication {
+
+	@Autowired
+	private ContactMasterRepo contactMasterRepo;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringDataJpaAshokitApplication.class, args);
+		
+		ContactMasterEntity entity=new ContactMasterEntity();
+		entity.setContactName("sumit dhanorkar");
+		entity.setContactNumber(1234567896L);
+		
+		contactMasterRepo.save(entity);
+		
+	}
+
+}

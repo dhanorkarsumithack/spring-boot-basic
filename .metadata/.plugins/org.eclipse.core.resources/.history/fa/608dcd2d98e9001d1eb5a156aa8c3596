@@ -1,0 +1,11 @@
+package com.sumit.Repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.sumit.entity.ContactMasterEntity;
+
+@Repository 
+public interface ContactMasterRepo extends CrudRepository<ContactMasterEntity, Integer> {
+
+}

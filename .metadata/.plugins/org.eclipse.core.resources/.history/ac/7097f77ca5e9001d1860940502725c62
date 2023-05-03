@@ -1,0 +1,25 @@
+package com.sumit.generator;
+
+import java.sql.Connection;
+
+import org.hibernate.HibernateException;
+import org.hibernate.engine.spi.SharedSessionContractImplementor;
+import org.hibernate.id.IdentifierGenerator;
+
+public class OrderIdGenerator implements IdentifierGenerator {
+
+	@Override
+	public Object generate(SharedSessionContractImplementor session, Object object) throws HibernateException {
+		String prefix ="OD";
+		String suffix="";
+		
+		try {
+		     Connection con=session.connection();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return prefix+suffix;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.sumit.entity;
+
+import java.util.Date;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Order_details")
+public class OrderDetailsEntity {
+
+	private String orderId;
+	
+	private String orderBy;
+	
+	private Date orderPlacedDate;
+}

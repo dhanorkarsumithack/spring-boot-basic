@@ -1,0 +1,13 @@
+package com.sumit.entity;
+
+import lombok.Data;
+
+@Data
+public class ContactMasterEntity {
+	
+	private Integer contactId;
+
+	private String contactName;
+	
+	private Long contactNumber;
+}

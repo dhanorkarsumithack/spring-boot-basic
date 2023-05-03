@@ -1,0 +1,5 @@
+package com.sumit.entity;
+
+public class ContactMasterEntity {
+
+}
